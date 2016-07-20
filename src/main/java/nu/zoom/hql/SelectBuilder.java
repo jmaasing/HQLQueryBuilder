@@ -16,5 +16,5 @@
 package nu.zoom.hql;
 
 public interface SelectBuilder {
-    
+    FromBuilder select(String s) ;
 }

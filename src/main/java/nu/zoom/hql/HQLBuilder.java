@@ -15,8 +15,17 @@
  */
 package nu.zoom.hql;
 
-public class HQLBuilder {
-    public static SelectBuilder select() {
-        return null ;
+import nu.zoom.hql.impl.HQLQueryBuilderImpl;
+
+public class HQLBuilder implements SelectBuilder {
+    private HQLQueryBuilderImpl builder = new HQLQueryBuilderImpl();
+    
+    @Override
+    public FromBuilder select(String s) {
+        return builder.select(s) ;
+    }
+    
+    public String build() {
+        return builder.build() ;
     }
 }

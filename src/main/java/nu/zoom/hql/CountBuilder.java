@@ -20,5 +20,5 @@ package nu.zoom.hql;
  * @author Johan Maasing <johan@zoom.nu>
  */
 public interface CountBuilder {
-    
+
 }
